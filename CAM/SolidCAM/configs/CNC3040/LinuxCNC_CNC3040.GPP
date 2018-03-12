@@ -342,8 +342,6 @@ endp
 ;-------------------
 
 @change_tool
-    {nb, 'G54'}
-    {nb, 'G30'}
     if flag2 eq 0
        call @home_number
     endif
