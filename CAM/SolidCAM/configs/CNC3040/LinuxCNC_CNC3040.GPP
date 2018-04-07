@@ -545,14 +545,14 @@ endp
 ;-------------------
 
 @m_feed_spin
-;     if tool_direction eq CW then
-;        mcode = 4
-;     else              ;  CCW
-;         mcode = 3
-;     endif
-;     if change(spin)
-;     {nb,'S'spin:integer_def_f, ' M'mcode}
-;     endif
+     if tool_direction eq CW then
+        mcode = 3
+     else              ;  CCW
+        mcode = 4
+     endif
+     if change(spin)
+     {nb,'S'spin:integer_def_f, ' M'mcode}
+     endif
     m_feed_flag = 1
 endp
 
